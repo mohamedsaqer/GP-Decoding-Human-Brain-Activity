@@ -90,8 +90,8 @@ labels = np.argsort(labels)
 del(data1,dst)
 x_train,y_train,x_test,y_test,x_val,y_val = load_data(data_path, labels, path,dlen=diff, stpt=strt)
 
-def data_load(strt=strt , diff = diff):
+def data_load(strt=strt , flen = diff):
 	''' 
 		srt is the start of EEG data default 50
 		diff is the length of data defaullt 250'''
-    return(load_data(data_path, labels, path,dlen=diff, stpt=strt))
+    return(load_data(data_path, labels, path,dlen=flen, stpt=strt))
